@@ -1,0 +1,21 @@
+DAILY VALUES							
+							
+Stations							
+Stnr	Name	Operates from	Operates until	Altitude	Municipality	County	Region
+50500	FLESLA-1	Oct-55		48	BERGEN	HORDALA-1	WESTERN NORWAY
+							
+Elements							
+Code	Name	Unit					
+POM	Average air pressure. station level	hPa					
+PON	Minimum air pressure. station level	hPa					
+POX	Maximum air pressure. station level	hPa					
+PRM	Average air pressure. sea level	hPa					
+PRN	Minimum air pressure. sea level	hPa					
+PRX	Maximum air pressure. sea level	hPa					
+RR	Precipitation	mm					
+SA	Snow depth	cm					
+SD	Snow cover	code	Values:	-1 (ND)	0	1	
+SLAG	Precipitation type	code	Values:	-1 (ND)	0 (RR)	1 (RS)	2 (SS)
+TAM	Mean temperature	ºC					
+TAN	Minimum temperature	ºC					
+TA-1	Maximum temperature	ºC					

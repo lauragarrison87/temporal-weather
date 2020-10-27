@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Garrison D3 Weather Visualization</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="simple-style.css"> -->
+</head>
+
+<body>
+    <h1>Hordaland weather: 2000-2010</h1>
+    <p>Laura Garrison</p>
+
+    <!-- YEARLY TEMP CHART -->
+    <div id="temp-range-year-chart"> </div>
+    <div id="info-container">
+        <h2>Hordaland average temperature range by year</h2>
+        <h3>How to read this chart...</h3>
+        <p>
+            <ul>
+                <li>Average daily temperature is represented along the x-axis. Each circle represents the average
+                    temperature of a single day of a year.</li>
+                <li>Data for Hordaland weather was collected over a 10-year period; the years of collection are
+                    arranged along the y-axis. This in effect creates a set of temperature bands, which allow us to
+                    see outliers in average temperature within and over the entire collection span.</li>
+                <li>Daily temperature circles are color-coded to show type of precipitation on that day. Colors
+                    represent the following precipitation types:
+                    <ul>
+                        <li>Off-white: ND</li>
+                        <li>Dark orange: RR</li>
+                        <li>Light blue: RS</li>
+                        <li>Dark blue: SS</li>
+                    </ul>
+                    We can see from this color scheme that there is mostly no data collected over this period, except
+                    for the first few years of the collection.
+                </li>
+            </ul>
+        </p>
+
+    </div>
+
+
+    <!-- DAILY RAIN CHART
+    <div id="date-rainfall-chart">
+        <h2>Hordaland average temperature and precipitation</h2>
+    </div> -->
+
+    <!-- RADIAL WEATHER PLOT -->
+    <div id="weather-radial-plot">
+        <div id="info-container">
+            <h2>Temperature and Rainfall by Year</h2>
+            <h3>How to read this chart...</h3>
+            <p>
+                <ul>
+                    <li>Years form the outermost circle -- select one of these years to view the daily average
+                        temperature and precipitation (mm) for each day of the calendar year.</li>
+                    <li>Average temperature is shown as a small colored dot positioned along the circle axis to
+                        indicate mean temperature for that day. </li>
+                    <li>Precipitation is encoded with area, indicated by a circle with its center oriented with its
+                        associated daily temperature bar. The larger the circle, the greater the amount of
+                        precipitation
+                        for
+                        that day.</li>
+                </ul>
+            </p>
+            <p>Code adapted from <a href="https://github.com/stetro/weather-visualization">stetro weather
+                    visualization</a>,
+                which in turn was inspired by <a href="http://www.weather-radials.com/">Weather Radials</a> poster
+                design.</p>
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="//d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="data/yrweather.json"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="scripts/simple.js"></script>
+    <script src="scripts/weather.js"></script>
+
+</body>
+
+</html>
